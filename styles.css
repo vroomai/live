@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #1E45FB;
+}
+
+body, html, input, button {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 600px;
+
+    gap: 2rem;
+}
+
+#auth-section, #chat-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#messages {
+    width: 90%;
+    height: 60vh;
+    margin-bottom: 10px;
+    overflow-y: auto; /* Changed from scroll to auto to only show scrollbar when needed */
+}
+
+#messages > div {
+    width: 100%;
+    display: flex;
+}
+
+#messages > div > div {
+    padding: 5px 10px;
+
+    margin: 5px;
+    border-radius: 10px;
+    word-wrap: "break-word";
+    display: "inline-block";
+    max-width: 80%;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #e7f0fe;
+    color: rgb(35, 35, 35);
+    border: none;
+}
+
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 2px;
+    background-color: #b3b3b3;
+    border-radius: 50%;
+    animation: dotPulse 1.2s infinite;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+
+@keyframes dotPulse {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-2px);
+      background-color: #ffffff;
+    }
+  }
+  
