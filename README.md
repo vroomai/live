@@ -1,7 +1,7 @@
 <h1 align="center"> Vroom Live </h1>
 
 <h3 align="center">
-	Chat with Ableton Live in your browser.<br>
+	🎉 Awarded "Best Presentation" at Timbre Tools Hackathon 2024 🎉 <br>
 </h3>
 
 <br>
