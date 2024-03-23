@@ -17,31 +17,19 @@ This repository was created as a submission to the [Timbre Tools Hackathon 2024]
 
 ## Installation
 
-1. Install [AbletonOSC](https://github.com/ideoforms/AbletonOSC) by Daniel Jones.
+1. Install [AbletonOSC](https://github.com/vroomai/AbletonOSC) by Daniel Jones.
 
 ```
 mkdir -p "$HOME/Music/Ableton/User Library/Remote Scripts/AbletonOSC" && \
-wget -qO- https://github.com/ideoforms/AbletonOSC/archive/refs/heads/master.zip | \
+wget -qO- https://github.com/vroomai/AbletonOSC/archive/refs/heads/master.zip | \
 bsdtar --strip-components 1 -C "$HOME/Music/Ableton/User Library/Remote Scripts/AbletonOSC" -xf -
-```
-
-2. Install Deno to run the UDP to WebSocket Bridge.
-
-```
-curl -fsSL https://deno.land/install.sh | sh
 ```
 
 ## Usage
 
-1. Run the WebSocket bridge to allow Vroom Live to access your local Ableton instance.
+1. Start Ableton, in `Preferences > Link / Tempo / MIDI`, under the Control Surface dropdown, select the new "AbletonOSC" option.
 
-```
-$HOME/.deno/bin/deno --unstable-net run --allow-net https://live.vroomai.com/connect.ts
-```
-
-2. Start Ableton.
-
-3. Navigate to [https://live.vroomai.com](https://live.vroomai.com).
+2. Navigate to [https://live.vroomai.com](https://live.vroomai.com) and enter your OpenAI key.
 
 ## Discord
 
