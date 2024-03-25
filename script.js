@@ -15,7 +15,7 @@ document.getElementById("enterChat").addEventListener(
 		const live = await isLive();
 		if (!live) {
 			alert(
-				"Ableton is not live. Please make sure the ws-udp bridge is open.",
+				"Ableton is not live. Please make sure AbletonOSC is installed. See the Vroom Live Github README for more information.",
 			);
 			return;
 		}
